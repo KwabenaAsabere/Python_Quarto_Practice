@@ -1,0 +1,29 @@
+---
+title: "QUARTO IN VIRTUAL ENVIRONMENTS"
+format: html
+---
+
+
+```{python}
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+```
+
+
+```{python}
+osteo = pd.read_csv(r"C:\Users\KAsab\Downloads\osteoporosis_survey.csv")
+
+osteo.head(10)
+```
+
+#### Visualization
+
+```{python}
+osteo.hist("BMI",edgecolor = "black")
+plt.grid()
+plt.show()
+```
