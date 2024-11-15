@@ -27,3 +27,11 @@ osteo.hist("BMI",edgecolor = "black")
 plt.grid()
 plt.show()
 ```
+
+```{python}
+sns.countplot(
+    data = osteo,
+    x = "Gender",
+    hue = "Smoking"
+)
+```
